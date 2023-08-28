@@ -17,7 +17,7 @@ export default function Home() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+        <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-28">
           <div className="container flex max-w-6xl flex-col items-center gap-4 text-center">
             <h1 className="text-3xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl">
               Creando memorables experiencias de usuario con Synthomatic UI.
