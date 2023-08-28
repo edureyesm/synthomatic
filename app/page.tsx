@@ -1,37 +1,48 @@
-import Image from "next/image";
 import Link from "next/link";
+import { Component } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <header className="container z-40 bg-violet-950/75 backdrop-blur-sm backdrop-filter">
+    <div className="flex min-h-screen flex-col bg-gradient-to-r from-indigo-950 via-violet-950 to-fuchsia-950">
+      <header className="container z-40">
         <div className="flex h-20 items-center justify-between py-6">
           <div className="flex gap-6 md:gap-10">
             <Link href="/" className="items-center space-x-2 md:flex">
-              <Image
-                src="/images/logo.png"
-                alt="synthomatic"
-                width={40}
-                height={40}
-              />
+              <Component />
               <span className="hidden font-bold sm:inline-block">
-                Synthomatic
+                Synthomatic UI
               </span>
             </Link>
           </div>
         </div>
       </header>
-      <main className="flex-1 bg-slate-950">
+      <main className="flex-1">
         <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
-          <div className="container flex max-w-5xl flex-col items-center gap-4 text-center">
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
-              Componentes reutilizables, customizables y accesibles.
+          <div className="container flex max-w-6xl flex-col items-center gap-4 text-center">
+            <h1 className="text-3xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl">
+              Creando memorables experiencias de usuario con Synthomatic UI.
             </h1>
-            <p className="max-w-2xl leading-normal text-blue-100 sm:text-xl sm:leading-8">
-              Synthomatic es una aplicación de demostración completa que muestra
-              componentes pre-construidos para React. Incluye botones,
-              formularios, modales y muchos más.
+            <p className="max-w-2xl leading-normal text-white sm:text-xl sm:leading-8">
+              Da vida a tus diseños: Explora una amplia colección de componentes
+              de interfaz de usuario totalmente personalizables, responsivos,
+              animados y accesibles.
             </p>
+            <div className="space-x-4">
+              <Link
+                className="inline-flex h-10 items-center justify-center rounded-md bg-cyan-400 px-8 text-sm font-medium transition-colors"
+                href="/"
+              >
+                Comienza
+              </Link>
+              <Link
+                className="inline-flex h-10 items-center justify-center rounded-md border border-cyan-400 px-8 text-sm font-medium transition-colors"
+                href="https://github.com/edureyesm/synthomatic"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github
+              </Link>
+            </div>
           </div>
         </section>
       </main>
