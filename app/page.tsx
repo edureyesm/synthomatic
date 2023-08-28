@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Component } from "lucide-react";
 
+import { Button } from "@/components/ui/button";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-r from-indigo-950 via-violet-950 to-fuchsia-950">
