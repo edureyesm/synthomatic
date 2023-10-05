@@ -1,9 +1,13 @@
+"use client";
 import Link from "next/link";
 import { Component } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
+  const shoot = (message: string, e: any) => {
+    console.log(message);
+  };
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-r from-indigo-950 via-violet-950 to-fuchsia-950">
       <header className="container z-40">
@@ -22,7 +26,7 @@ export default function Home() {
         <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-28">
           <div className="container flex max-w-6xl flex-col items-center gap-4 text-center">
             <h1 className="text-3xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              Creando memorables experiencias de usuario con Synthomatic UI.
+              Crea memorables experiencias de usuario con Synthomatic UI.
             </h1>
             <p className="max-w-2xl leading-normal text-white sm:text-xl sm:leading-8">
               Da vida a tus diseños: Explora una amplia colección de componentes
