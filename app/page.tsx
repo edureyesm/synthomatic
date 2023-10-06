@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Component } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button/button";
 
 export default function Home() {
   const shoot = (message: string, e: any) => {
@@ -34,12 +34,9 @@ export default function Home() {
               animados y accesibles.
             </p>
             <div className="space-x-4">
-              <Link
-                className="inline-flex h-10 items-center justify-center rounded-md bg-cyan-400 px-8 text-sm font-medium transition-colors"
-                href="/"
-              >
-                Comienza
-              </Link>
+              <Button asChild>
+                <Link href="/">Comienza</Link>
+              </Button>
               <Link
                 className="inline-flex h-10 items-center justify-center rounded-md border border-cyan-400 px-8 text-sm font-medium transition-colors"
                 href="https://github.com/edureyesm/synthomatic"
